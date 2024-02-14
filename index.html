@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <title>Валентинка</title> 
+  <style> 
+
+@import "https://fonts.fontstorage.com/import/marckscript.css";
+
+
+    body { 
+      margin: 0; 
+      padding: 0; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      background-color: #f0f0f0; 
+      font-family: 'Marck Script';
+    } 
+    .button { 
+      cursor: pointer; 
+    } 
+    .button img { 
+      width: 200px; 
+      height: auto; 
+    } 
+    .hidden { 
+      display: none; 
+    } 
+    .content { 
+      text-align: center; 
+      max-width: 1000px; 
+      margin: 0 auto; 
+    } 
+    .content p1 { 
+      color: rgb(197, 116, 129); 
+      font-size: 30px; 
+    } 
+    .content p { 
+      line-height: 1; 
+      font-size: 20px; 
+      color: #333; 
+    } 
+    .content h1 { 
+      font-size: 37px; 
+      color: rgb(197, 116, 129); 
+    } 
+     
+    @media (max-width: 600px) { 
+      .button img { 
+        width: 150px; 
+      } 
+      .content { 
+        max-width: 90%; 
+      } 
+      .content h1 { 
+        font-size: 28px; 
+      } 
+      .content p1 { 
+        font-size: 18px; 
+      } 
+      .content p { 
+        font-size: 13px; 
+      } 
+    } 
+  </style> 
+</head> 
+<body> 
+ 
+<div class="button" onclick="showContent()"> 
+  <img src="your-gif.gif" alt="Button" id="buttonImg"> 
+</div> 
+ 
+<div class="content hidden" id="content"> 
+  <h1>C днём всех влюбленных!</h1> 
+  <p>Это уже второе наше 14 февраля, и я счастлива думать, что оно далеко не последнее.</p> 
+  <p>Я бы хотела сказать тебе спасибо за все, что ты делал и делаешь, за то, что мы все ещё вместе, за то, что ты есть в этом мире.</p> 
+  <p>Ты всегда стараешься поддержать меня, с пониманием относишься к моему плохому настроению и вспышкам гнева по всякой ерунде. Ты продолжаешь принимать меня снова и снова, заботишься обо мне, всегда стараешься, чтобы хорошо все было.</p> 
+  <p>Мне ужасно повезло с тобой. Ты не только прекрасный человек, но и замечательный партнёр. Уж не знаю, может я мир спасла в прошлой жизни, раз мне такое сокровище привалило, ккккк.</p> 
+  <p>Спасибо тебе за все. Я очень ценю все что ты делаешь и вижу это. Я очень ценю и самого тебя - как личность, как человека, как своего возлюбленного. Я действительно счастлива, что именно ты мой любимый человек. Впрочем, иначе быть и не могло. Только ты способен так сильно волновать мое сердце и занимать все мысли в голове.</p> 
+  <p>Я очень сильно люблю тебя, и мне нравится испытывать эти чувства. Никто не может отнять этого у меня. Мои чувства к тебе безграничны и абсолютно искренны.</p> 
+  <p>Я обожаю и желаю тебя всем своим сердцем и душой. Люблю каждое твое "типичное" для тебя словечко, твою привычку докапываться до мелочей, твои шуточки, твои плавные повествования, твои мысли и гепотизы, твои привычки. Невозможно все перечислить. Люблю в тебе все, даже то, на что обижаюсь.</p> 
+  <p>Я хочу всегда быть с тобой, наслаждаться этой жизнью вместе с тобой и находить интересные вещи в этом не самом прекрасном мире. Я верю в наше счастливое совместное будущее и буду счастлива встретить его именно с тобой.</p> 
+  <p1>Я люблю тебя, Луши. С праздником!</p1> 
+</div> 
+ 
+<script> 
+  function showContent() { 
+    var content = document.getElementById("content"); 
+    var buttonImg = document.getElementById("buttonImg");
+    content.classList.remove("hidden");
+    buttonImg.style.display = "none";
+  } 
+</script> 
+ 
+</body> 
+</html>
